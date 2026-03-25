@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>للملكة روري ❤️</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@500;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Tajawal', sans-serif;
+        }
+
+        body {
+            background-color: #5c0a16; /* أحمر غامق جداً ودافئ */
+            overflow: hidden;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* --- الصفحة الأولى --- */
+        #page1 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            transition: opacity 0.8s ease;
+        }
+
+        .heart-btn {
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 80px;
+            color: #ff4d6d;
+            position: relative;
+            animation: pulse 1.5s infinite;
+            filter: drop-shadow(0 0 20px #ff4d6d);
+            transition: transform 0.2s;
+        }
+
+        .heart-btn:hover {
+            transform: scale(1.1);
+        }
+
+        .text-hint {
+            color: #fce1e4;
+            margin-top: 30px;
+            font-size: 1.3rem;
+            font-weight: 500;
+            opacity: 0.9;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); filter: drop-shadow(0 0 15px #ff4d6d); }
+            50% { transform: scale(1.1); filter: drop-shadow(0 0 35px #ff4d6d); }
+            100% { transform: scale(1); filter: drop-shadow(0 0 15px #ff4d6d); }
+        }
+
+        /* --- الصفحة الثانية (الرسالة) --- */
+        #page2 {
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            background-color: #720e1d;
+            opacity: 0;
+            transition: opacity 0.8s ease;
+            padding: 20px;
+        }
+
+        .letter-box {
+            background-color: #d8c3a5; /* بيج غامق */
+            width: 85%;
+            max-width: 600px;
+            height: 60vh; /* صغرنا الارتفاع قليلاً ليتسع الزر بالأسفل */
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow-y: auto;
+        }
+
+        .letter-title {
+            color: #5c0a16;
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #b59b7c;
+            padding-bottom: 10px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .letter-content {
+            color: #333;
+            font-size: 1.15rem;
+            line-height: 1.8;
+            text-align: right;
+            width: 100%;
+        }
+
+        /* --- زر "دورك" --- */
+        .reply-btn {
+            margin-top: 25px;
+            background-color: #ff4d6d;
+            color: white;
+            border: none;
+            padding: 12px 40px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            border-radius: 12px;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(255, 77, 109, 0.4);
+            transition: transform 0.2s, background-color 0.3s;
+            text-decoration: none; /* عشان لو كان وسم <a> ما يحط تحته خط */
+            display: inline-block;
+        }
+
+        .reply-btn:hover {
+            background-color: #ff2a55;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+    <div id="page1">
+        <button class="heart-btn" onclick="openLetter()">❤️</button>
+        <p class="text-hint">اضغطي فديتت اصباعك يا شيخة🥹</p>
+    </div>
+
+    <div id="page2">
+        <div class="letter-box">
+            <h2 class="letter-title">رسالة لك</h2>
+            
+            <div class="letter-content">
+                    نورتي موقعك يا ملكة<br>
+                هدية بسيطة جداً مني لك صراحة
+كنت حا اشتري لك ذهب و مجهز الاسورة الي بشتريها لك و خلاص تم.
+جيت بشتريها نفذت الكمية و الباقي اغلى مني! بلا في شكلهم
+
+والله يا ملكتي يا عيوني انتي انك تستاهلي الماس و الفستان هذاك الي بالي بالك و بجيب لك هم كلهم و احلى ان شاء الله بس كل شي بوقته يكون حلو<br><br>
+      اتمنى فعلاً ان الهدية عجبتك و تكون دخلت قلبك.
+<br>
+اخترت ان الهدية تكون شي ملبوس عشان لمن تلبسيها تحسي اني جنبك دايماً.
+
+ابغا اعبر عن مشاعري لك،
+في يوم الاربعاء ٦ شوال، الساعة ٨:٢٩ دقيقة، جالس اكتب لك و ابرمج هذا الموقع لك خصيصاً و انتي نايمة🥹 جعلها نومة مريحة يا رب. مشتاق لك يا ملكة و اميرتي انتي
+فقدتك مرة و انتي نايمة بس اهم ما عندي انك نايمة و مرتاحة🫂
+روري حبيبتي شكراً مرة وجودك بحياتي
+الله يديمنا لبعض و يزوجنا بعض في اقرب وقت يا رب و يجعل بينا مودة و رحمة و محبة ما تنتهي ولا قد انشافت في التاريخ
+<Br>
+احبك يا روري احبك مرة ❤️
+            </div>
+        </div>
+
+        <a href="send.html" class="reply-btn">دورك دحين 💌</a>
+    </div>
+
+    <script>
+        function openLetter() {
+            const p1 = document.getElementById('page1');
+            const p2 = document.getElementById('page2');
+
+            p1.style.opacity = '0';
+            setTimeout(() => {
+                p1.style.display = 'none';
+                
+                p2.style.display = 'flex';
+                setTimeout(() => {
+                    p2.style.opacity = '1';
+                }, 50);
+            }, 800);
+        }
+    </script>
+</body>
+</html>
